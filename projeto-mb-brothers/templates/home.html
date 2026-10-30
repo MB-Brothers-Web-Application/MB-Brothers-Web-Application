@@ -2,13 +2,234 @@
 
 {% block barra_navegacao %}
 
-    <!-- Fazer html da barra de navegação aqui -->
+    <div id="logo"><span>MB</span><span class="brothers">Brothers</span></div>
+    <nav>
+        <ul class="items">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#horarios">Horários</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+        </ul>
+    </nav>
+    
 
 {% endblock %}
 
 {% block conteudo %}
-
-    <!-- Fazer html do contéudo da homepage aqui -->
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p>ACADEMIA DE LUTAS DESDE 2009</p>
+                <h2>Sinta o corpo, redefina seus limites.</h2>
+                <p>Entre para a elite da excelência e faça parte da familia MB Brothers.</p>
+                <p>Treinos de alta performance com professores faixa-preta em um ambiente acolhedor para todos os níveis.</p>
+                <div class="hero-actions">
+                    <a href="#sobre" class="btn-primary">Conheça nosssa história</a>
+                    <a href="#contato" class="btn-secondary">Contato</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="sobre" class="sobre">
+            <div class="sobre-img">
+                <img src="" alt="">
+                <!--Foto da MB Brothers-->
+            </div>
+            <div class="sobre-content">
+                <h2>Uma história construída com comprometimento.</h2>
+                <p>Na jornada de mais de 15 anos, Eduardo, um dos sócios da academia, já trilhava seu caminho no mundo do Jiu-Jitsu, conquistando reconhecimento e se tornando uma referência no cenário do MMA na cidade.</p>
+                <p>Observando o crescimento e confiando na transformação que o esporte pode proporcionar na vida das pessoas, os irmãos Eduardo Machado e Carlos Bezerril decidiram unir forças. Assim, a Eduardo Machado Team evoluiu para a MB Brothers, cujo nome carrega as iniciais dos sobrenomes dos irmãos.</p>
+                <p>Mais do que uma simples mudança de nome, a MB Brothers simboliza uma parceria sólida e uma visão compartilhada de potencial. A iniciativa reflete a crença de que, ao unirem forças, eles podem não apenas potencializar suas habilidades, mas também utilizar o esporte como uma ferramenta poderosa para concretizar sonhos.</p>
+            </div>
+            <div>
+                <h2>Conheça os treinadores</h2>
+                <div class="sobre-treinadores">
+                    <img src="" alt="">
+                    <p>Alex Poatan</p>
+                    <p>Professor de Kick-Boxing</p>
+                </div>
+                <div class="sobre-treinadores">
+                    <img src="" alt="">
+                    <p>Charles Oliveira</p>
+                    <p>Professor de Jiu-Jitsu</p>
+                </div>
+                <div class="sobre-treinadores">
+                    <img src="" alt="">
+                    <p>Carlos Prates</p>
+                    <p>Professor de Muay-Thai</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="modalidades" class="modalidades">
+            <h2>Modalidades</h2>
+            <div class="modalidades-lista">
+                <div class="artes-marciais">
+                    <img src="" alt="">
+                    <p>Muay-Thai</p>
+                    <p>Arte das Oito Armas</p>
+                </div>
+                <div class="artes-marciais">
+                    <img src="" alt="">
+                    <p>Jiu-Jitsu</p>
+                    <p>A arte do Xadrez Humano</p>
+                </div>
+                <div class="artes-marciais">
+                    <img src="" alt="">
+                    <p>Boxe</p>
+                    <p>A Nobre Arte</p>
+                </div>
+                <div class="artes-marciais">
+                    <img src="" alt="">
+                    <p>Kick-Boxing</p>
+                    <p>A Arte dos Quatro Membros</p>
+                </div>
+                <div class="artes-marciais">
+                    <img src="" alt="">
+                    <p>MMA</p>
+                    <p>O Xadrez Marcial Definitivo</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="servicos" class="servicos">
+            <div class="servicos-lista">
+                <h2>Serviços</h2>
+                <div class="servicos-unitario">
+                    <img src="" alt="">
+                    <p>Fisioterapia</p>
+                </div>
+                <div class="servicos-unitario">
+                    <img src="" alt="">
+                    <p>Nutricionista</p>
+                </div>
+                <div class="servicos-unitario">
+                    <img src="" alt="">
+                    <p>Condicionamento Físico</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="horarios" class="horarios">
+            <div class="tabela">
+                <section class="specs-horario">
+                    <h2>Horários</h2>
+                    <table>
+                        <thead>
+                            <th>Horários</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                            <th>Sábado</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8h00 - 8h50</td>
+                                <td>Muay-Thai KIDS</td>
+                                <td>Jiu-Jitsu KIDS</td>
+                                <td>Muay-Thai KIDS</td>
+                                <td>Jiu-Jitsu KIDS</td>
+                                <td>Sparring</td>
+                                <td>Jiu-Jitsu</td>
+                            </tr>
+                            <tr>
+                                <td>8h50 - 9h40</td>
+                                <td>Muay-Thai KIDS</td>
+                                <td>Jiu-Jitsu KIDS</td>
+                                <td>Muay-Thai KIDS</td>
+                                <td>Jiu-Jitsu KIDS</td>
+                                <td>Sparring</td>
+                                <td>Jiu-Jitsu</td>
+                            </tr>
+                            <tr>
+                                <td>9h40 - 10h30</td>
+                                <td>Jiu-Jitsu</td>
+                                <td>Muay-Thai</td>
+                                <td>Jiu-Jitsu</td>
+                                <td>Muay-Thai</td>
+                            </tr>
+                            <tr>
+                                <td>10h30 - 11h20</td>
+                                <td>Jiu-Jitsu</td>
+                                <td>Muay-Thai</td>
+                                <td>Jiu-Jitsu</td>
+                                <td>Muay-Thai</td>
+                            </tr>
+                            <tr>
+                                <td>13h30 - 14h20</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                            </tr>
+                            <tr>
+                                <td>14h20 - 15h10</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                            </tr>
+                            <tr>
+                                <td>15h10 - 16h00</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                            </tr>
+                            <tr>
+                                <td>16h00 - 16h50</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                                <td>Boxe</td>
+                                <td>Kick-Boxing</td>
+                            </tr>
+                            <tr>
+                                <td>18h10 - 19h00</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>Sparring</td>
+                            </tr>
+                            <tr>
+                                <td>19h00 - 19h50</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>MMA</td>
+                                <td>Sparring</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
+        <hr>
+        <section id="localizacao" class="localizacao">
+            <h2>Onde estamos localizados</h2>
+            <p>Av. Espírito santo, 381, Estados, João Pessoa - PB</p>
+            <!--Espaço pra colocar o mapa responsivo-->
+        </section>
+        <hr>
+    </main>
      
 {% endblock %}
 
+{% block rodape %}
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2026 MB Brothers. Todos os direitos reservados.</p>
+        </div>
+        <div>
+            <ul>
+                <li id="contato"><a href="">Contato</a></li>
+                <!--Adicionar Whatsapp como link do contato-->
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </div>
+    </footer>
+
+{% endblock %}
