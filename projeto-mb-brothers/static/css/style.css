@@ -1,0 +1,193 @@
+/*Estilização da página sobre*/
+.sobre {
+    background-color: #0b0b0b;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/*Foto e história da MB BROTHERS*/
+.sobre-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+
+.sobre-content h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sobre-content h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #d90429;
+    border-radius: 2px;
+}
+
+.sobre-content p {
+    font-size: 18px;
+    color: #b3b3b3;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Card dos treinadores*/
+.sobre-treinadores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 25px 20px;
+    background-color: #181818;
+    border: 1px solid #333;
+    text-align: center;
+    align-items: center;
+}
+
+.sobre-treinadores:hover {
+    background-color: #1a1a1a;
+    border-color: #d90429;
+    box-shadow: 0 10px 25px rgba(217, 4, 41, 0.2);
+}
+
+.sobre-treinadores img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-treinadores:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(217, 4, 41, 0.5);
+}
+
+.sobre-treinadores h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sobre-treinadores p {
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 1.4;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.sobre-treinadores a {
+    color: #d90429;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/*Responsividade da página sobre*/
+@media (max-width: 900px) {
+    .sobre {
+        padding: 60px 15px;
+    }
+
+    .sobre-content {
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-content h2 {
+        font-size: 28px;
+    }
+
+    .sobre-content p {
+        font-size: 16px;
+    }
+
+    .sobre-treinadores {
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .sobre-treinadores img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sobre-treinadores h3 {
+        font-size: 20px;
+    }
+
+    .sobre-treinadores p {
+        font-size: 14px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        padding: 40px 10px;
+    }
+
+    .sobre-content h2 {
+        font-size: 24px;
+    }
+
+    .sobre-content p {
+        font-size: 14px;
+    }
+
+    .sobre-treinadores {
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .sobre-treinadores img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobre-treinadores h3 {
+        font-size: 18px;
+    }
+
+    .sobre-treinadores p {
+        font-size: 12px;
+        max-width: 200px;
+    }
+}
