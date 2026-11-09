@@ -1,12 +1,42 @@
+:root {
+    --preto: #0a0a0a;
+    --grafite: #1c1c1e;
+    --grafite-claro: #343439;
+    --cinza: #9a9a9f;
+    --vermelho: #e10600;
+    --vermelho-escuro: #470100;
+    --branco: #f5f5f5;
+    --fonte-titulo: Impact, "Arial Narrow Bold", "Arial Black", sans-serif;
+    --fonte-texto: "Segoe UI", Arial, sans-serif;
+}
+.hero .hero-actions .btn-primary {
+    display: inline-block;
+    gap: 20px;
+    color: var(--branco);
+    justify-content: center;
+    margin-top: 30px;
+    background-color: var(--vermelho);
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 20px;
+    &:hover {
+        color: var(--vermelho);
+        background-color: var(--grafite-claro);
+        transition: all 0.4s ease;
+    }
+}
+hero
+
 /*Estilização da página sobre*/
 .sobre {
-    background-color: #0b0b0b;
+    background-color: var(--preto);
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin: 0 auto;
     max-width: 1200px;
+    border-radius: 20px;
 }
 
 /*Foto e história da MB BROTHERS*/
@@ -16,7 +46,7 @@
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .sobre-content {
@@ -29,7 +59,7 @@
 .sobre-img img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 500px;
     margin: 0 auto;
     display: block;
@@ -39,7 +69,7 @@
 
 .sobre-content h2 {
     font-size: 36px;
-    color: #fff;
+    color: var(--branco);
     margin-bottom: 20px;
     font-weight: bold;
     position: relative;
@@ -51,13 +81,13 @@
     position: absolute;
     width: 60px;
     height: 4px;
-    background-color: #d90429;
+    background-color: var(--vermelho);
     border-radius: 2px;
 }
 
 .sobre-content p {
     font-size: 18px;
-    color: #b3b3b3;
+    color: var(--cinza);
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -70,15 +100,15 @@
     gap: 25px;
     margin-top: 40px;
     padding: 25px 20px;
-    background-color: #181818;
-    border: 1px solid #333;
+    background-color: var(--grafite);
+    border: 1px solid var(--grafite-claro);
     text-align: center;
     align-items: center;
 }
 
 .sobre-treinadores:hover {
-    background-color: #1a1a1a;
-    border-color: #d90429;
+    background-color: var(--grafite-claro);
+    border-color: var(--vermelho);
     box-shadow: 0 10px 25px rgba(217, 4, 41, 0.2);
 }
 
@@ -189,5 +219,292 @@
     .sobre-treinadores p {
         font-size: 12px;
         max-width: 200px;
+    }
+}
+
+/*css landingpage*/
+
+header {
+    background-color: var(--preto);
+    border-bottom: 3px solid var(--vermelho);
+    border-radius: 0 0 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-color: var(--branco);
+    background-color: var(--preto);
+    color: var(--branco);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: var(--vermelho);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 2px;
+    background-color: var(--vermelho);
+    margin: 5px auto;
+}
+
+/* ========== CELULAR (padrão) ========== */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+    /* o menu fixo não cobre o título da seção */
+}
+
+#logo {
+    padding: 10px 15px;
+    text-align: center;
+    background-color: var(--vermelho);
+    border-bottom: 5px solid var(--preto);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#logo img {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
+#logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mb {
+    color: var(--vermelho-escuro);
+    margin-right: 5px;
+}
+
+.brothers {
+    color: var(--branco);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* o menu cai para baixo do botão */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--preto);
+    border-radius: 0 0 20px 20px;
+    border-bottom: 3px solid var(--vermelho);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Botão das 3 barrinhas */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--branco);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Vira um "X" quando aberto */
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Lista de links: escondida no celular */
+nav .items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    /* tira as bolinhas do ul */
+    margin: 0;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+nav .items.aberto {
+    display: flex;
+}
+
+nav .items a {
+    display: block;
+    color: var(--branco);
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav .items a:hover {
+    color: var(--vermelho);
+    transition: all 0.4s ease;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #9a9a9f;
+    opacity: 0.5;
+    margin: 20px 0;
+}
+
+/* Tabela de horários rola para o lado no celular */
+.tabela {
+    overflow-x: auto;
+}
+
+.tabela table {
+    min-width: 600px;
+}
+/* O X fica escondido até o menu abrir */
+.fechar {
+  display: none;
+}
+
+/* Menu aberto: mostra a lista */
+#menu:target {
+  display: flex;
+}
+
+/* Menu aberto: troca as barrinhas pelo X */
+nav:has(#menu:target) .abrir {
+  display: none;
+}
+nav:has(#menu:target) .fechar {
+  display: flex;
+}
+
+/* Desenha o X */
+.fechar span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.fechar span:nth-child(2) {
+  opacity: 0;
+}
+.fechar span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ========== COMPUTADOR (768px ou mais) ========== */
+@media (min-width: 768px) {
+    html {
+        scroll-padding-top: 90px;
+    }
+
+    #logo {
+        padding: 15px 20px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    #logo img {
+        width: 80px;
+    }
+
+    #logo a {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    /* Some o botão */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Links sempre visíveis, lado a lado */
+    nav .items {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav .items a {
+        padding: 5px 10px;
     }
 }
