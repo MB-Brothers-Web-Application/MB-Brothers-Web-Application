@@ -65,11 +65,9 @@
 
 /*Card dos treinadores*/
 .sobre-treinadores {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-top: 40px;
     padding: 25px 20px;
     background-color: #181818;
@@ -120,7 +118,7 @@
 }
 
 /*Responsividade da página sobre*/
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .sobre {
         padding: 60px 15px;
     }
@@ -142,6 +140,7 @@
     .sobre-treinadores {
         gap: 20px;
         padding: 20px 15px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sobre-treinadores img {
@@ -175,6 +174,7 @@
     .sobre-treinadores {
         gap: 15px;
         padding: 15px 10px;
+        grid-template-columns: 1fr;
     }
 
     .sobre-treinadores img {
