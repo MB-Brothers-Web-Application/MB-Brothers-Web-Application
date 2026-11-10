@@ -508,3 +508,213 @@ nav:has(#menu:target) .fechar {
         padding: 5px 10px;
     }
 }
+
+/*===========SERVIÇOS - MB BROTHERS==============*/
+.servicos {
+    background-color: var(--preto);
+    padding: 80px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/*Container principal dos serviços*/
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Título dos serviços*/
+.servicos-lista h2 {
+    font-family: var(--fonte-titulo);
+    grid-column: 1 / -1;
+    color: var(--vermelho);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*card dos serviços*/
+.servicos-unitario {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--preto);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--vermelho);
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+/*Efeito hover nos cards dos serviços*/
+.servicos-unitario:hover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(217, 4, 41, 0.2);
+}
+
+/*Imagem dos serviços*/
+.servicos-unitario img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/*Descrição dos serviços*/
+.servicos-unitario p {
+    font-size: 20px;
+    color: var(--branco);
+    margin-bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 20px 10px;
+    text-align: center;
+    text-align: center;
+}
+
+/*Responsividade da página serviços*/
+
+/*========== CELULAR (padrão) ========== */
+@media (max-width: 600px) {
+    .servicos {
+        padding: 45px 20px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .servicos-lista {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos-lista h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .servicos-unitario {
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .servicos-unitario img {
+        width: 100%;
+        height: 220px;
+        max-width: 250px;
+    }
+
+    .servicos-unitario p {
+        font-size: 20px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+}
+
+/*========== TABLET (900px) ========== */
+@media (max-width: 900px) {
+    .servicos {
+        padding: 60px 20px;
+    }
+
+    .servicos-lista {
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .servicos-lista h2 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .servicos-unitario {
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .servicos-unitario img {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .servicos-unitario p {
+        font-size: 22px;
+        padding: 15px 10px;
+    }
+}
+
+/*========== DESKTOP (1200px) ========== */
+@media (min-width: 1200px) {
+    .servicos {
+        padding: 80px 20px;
+    }
+
+    .servicos-lista {
+        gap: 25px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .servicos-lista h2 {
+        font-size: 54px;
+        margin-bottom: 20px;
+    }
+
+    .servicos-unitario {
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .servicos-unitario img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .servicos-unitario p {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+}
