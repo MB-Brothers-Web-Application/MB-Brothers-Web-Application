@@ -852,3 +852,261 @@ nav:has(#menu:target) .fechar {
 .artes-marciais a:hover::after {
     opacity: 1;
 }
+
+/*CSS tabela de horários*/
+.horarios {
+    background-color: var(--preto);
+    padding: 80px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.horarios h2 {
+    font-family: var(--fonte-titulo);
+    display: block;
+    font-size: 40px;
+    margin: 0 auto;
+    color: var(--vermelho);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.specs-horario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Área de rolagem da tabela de horários*/
+.horarios .tabela {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--vermelho);
+}
+
+.horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+    text-align: center;
+}
+
+/*Cabeçalho e células da tabela de horários*/
+.horarios thead {
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.horarios th {
+    color: var(--branco);
+    padding: 15px 10px;
+    border: 1px solid var(--vermelho);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.horarios td {
+    padding: 12px 15px;
+    border: 1px solid var(--vermelho);
+    white-space: nowrap;
+    border-bottom: 1px solid var(--vermelho);
+}
+
+/*Primeira coluna da tabela de horários*/
+.horarios td:first-child,
+.horarios th:first-child {
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 12px;
+    width: 120px;
+    min-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.horario thead th:first-child {
+    color: var(--branco);
+    font-weight: bold;
+    text-align: center;
+}
+
+.horarios tbody tr:nth-child(even) {
+    background-color: var(--grafite);
+}
+
+.horarios tbody tr:nth-child(odd) {
+    background-color: var(--grafite-claro);
+}
+
+.horarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.horarios tbody td:first-child {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+/*Responsividade da tabela de horários*/
+/*========== DESKTOP ========== */
+@media (min-width: 900px) {
+    .horarios {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .horarios h2 {
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .specs-horario {
+        gap: 25px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .horarios th {
+        padding: 20px 15px;
+        font-size: 16px;
+    }
+    .horarios td {
+        padding: 16px 12px;
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .horarios table {
+        min-width: 750px;
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+    }
+
+    .horarios .tabela {
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid var(--vermelho);
+        width: 100%;
+    }
+}
+
+/*========== TABLET ========== */
+@media (max-width: 900px) {
+    .horarios {
+        padding: 50px 10px;
+        width: 100%;
+    }
+
+    .horarios h2 {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .specs-horario {
+        gap: 20px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .horarios th {
+        padding: 14px 10px;
+        font-size: 12px;
+    }
+    .horarios td {
+        padding: 10px 8px;
+        font-size: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .horarios table {
+        min-width: 400px;
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+    }
+
+    .horarios .tabela {
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid var(--vermelho);
+        width: 100%;
+    }
+}
+
+/*========== CELULAR (PADRÃO) ========== */
+@media (max-width: 600px) {
+    .horarios {
+        padding: 40px 10px;
+        width: 100%;
+    }
+
+    .horarios h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .specs-horario {
+        width: 100%;
+    }
+
+    .horarios th {
+        padding: 10px 8px;
+        font-size: 10px;
+    }
+    .horarios td {
+        padding: 10px 8px;
+        font-size: 8px;
+    }
+
+    .horarios table {
+        text-align: center;
+        width: 100%;
+        min-width: 400px;
+    }
+
+    .horarios .tabela {
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid var(--vermelho);
+    }
+}
