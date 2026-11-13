@@ -9,6 +9,33 @@
     --fonte-titulo: Impact, "Arial Narrow Bold", "Arial Black", sans-serif;
     --fonte-texto: "Segoe UI", Arial, sans-serif;
 }
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--preto);
+    display: flow-root;
+}
+.hero + hr {
+    margin-top: 0;
+}
+.hero .hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 60%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 60%);
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
 .hero .hero-actions .btn-primary {
     display: inline-block;
     gap: 20px;
@@ -19,13 +46,15 @@
     padding: 15px 30px;
     border-radius: 30px;
     margin: 20px;
+    font-weight: bold;
+
     &:hover {
         color: var(--vermelho);
-        font-weight: bold;
         background-color: color-mix(in srgb, var(--branco) 10%, transparent);
         transition: all 0.4s ease;
     }
 }
+
 .hero .hero-actions .btn-secondary {
     display: inline-block;
     gap: 20px;
@@ -36,13 +65,15 @@
     padding: 15px 30px;
     border-radius: 30px;
     margin: 20px;
+    font-weight: bold;
+
     &:hover {
         color: var(--vermelho);
-        font-weight: bold;
         background-color: color-mix(in srgb, var(--branco) 10%, transparent);
         transition: all 0.4s ease;
     }
 }
+
 .hero .hero-text p {
     font-size: 20px;
     color: var(--branco);
@@ -54,6 +85,7 @@
     margin-left: 20px;
     font-family: var(--fonte-texto);
 }
+
 .hero .hero-text h2 {
     font-size: 48px;
     color: var(--vermelho);
@@ -76,6 +108,7 @@
     margin: 0 auto;
     max-width: 1200px;
     border-radius: 20px;
+    margin-top: 0;
 }
 
 /*Foto e história da MB BROTHERS*/
@@ -379,7 +412,7 @@ html {
 }
 
 nav {
-    display:contents
+    display: contents
 }
 
 /* Botão das 3 barrinhas */
@@ -464,33 +497,37 @@ hr {
 .tabela table {
     min-width: 600px;
 }
+
 /* O X fica escondido até o menu abrir */
 .fechar {
-  display: none;
+    display: none;
 }
 
 /* Menu aberto: mostra a lista */
 #menu:target {
-  display: flex;
+    display: flex;
 }
 
 /* Menu aberto: troca as barrinhas pelo X */
 nav:has(#menu:target) .abrir {
-  display: none;
+    display: none;
 }
+
 nav:has(#menu:target) .fechar {
-  display: flex;
+    display: flex;
 }
 
 /* Desenha o X */
 .fechar span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
+
 .fechar span:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
+
 .fechar span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* ========== COMPUTADOR (768px ou mais) ========== */
@@ -760,6 +797,7 @@ nav:has(#menu:target) .fechar {
     text-transform: uppercase;
     text-align: center;
 }
+
 .modalidades-lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -768,6 +806,7 @@ nav:has(#menu:target) .fechar {
     max-width: 1400px;
     margin: 0 auto;
 }
+
 .artes-marciais {
     position: relative;
     overflow: hidden;
@@ -787,6 +826,7 @@ nav:has(#menu:target) .fechar {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(225, 6, 0, 0.3);
 }
+
 .artes-marciais img {
     position: absolute;
     top: 0;
@@ -801,11 +841,13 @@ nav:has(#menu:target) .fechar {
 .artes-marciais:hover img {
     transform: scale(1.1);
 }
+
 @media (min-width: 1100px) {
     .modalidades-lista {
         grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 }
+
 .artes-marciais p:nth-of-type(1) {
     font-size: 20px;
     color: var(--branco);
@@ -813,12 +855,14 @@ nav:has(#menu:target) .fechar {
     font-weight: bold;
     z-index: 1;
 }
+
 .artes-marciais p:nth-of-type(2) {
     font-size: 16px;
     color: var(--cinza);
     z-index: 1;
     margin-bottom: 5px;
 }
+
 .artes-marciais a {
     position: relative;
     align-self: center;
@@ -834,14 +878,17 @@ nav:has(#menu:target) .fechar {
     background-size: 0% 100%;
     transition: background-size 0.4s ease, padding 0.3s ease;
 }
+
 .artes-marciais a:hover {
     background-size: 100% 100%;
     padding: 6px 18px;
 }
+
 .artes-marciais p {
     margin: 0;
     padding: 0;
 }
+
 .artes-marciais a::after {
     content: "→";
     position: absolute;
@@ -849,6 +896,7 @@ nav:has(#menu:target) .fechar {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .artes-marciais a:hover::after {
     opacity: 1;
 }
@@ -997,6 +1045,7 @@ nav:has(#menu:target) .fechar {
         padding: 20px 15px;
         font-size: 16px;
     }
+
     .horarios td {
         padding: 16px 12px;
         font-size: 14px;
@@ -1046,6 +1095,7 @@ nav:has(#menu:target) .fechar {
         padding: 14px 10px;
         font-size: 12px;
     }
+
     .horarios td {
         padding: 10px 8px;
         font-size: 10px;
@@ -1091,6 +1141,7 @@ nav:has(#menu:target) .fechar {
         padding: 10px 8px;
         font-size: 9px;
     }
+
     .horarios td {
         padding: 10px 8px;
         font-size: 7px;
@@ -1108,5 +1159,138 @@ nav:has(#menu:target) .fechar {
         margin: 0 auto;
         border-radius: 10px;
         border: 1px solid var(--vermelho);
+    }
+}
+
+.localizacao {
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.localizacao-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mapa {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .localizacao-conteudo {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .endereco {
+        flex: 1;
+        padding: 40px;
+        font-size: 45px;
+        line-height: 1.6;
+        ;
+    }
+
+    .endereco p::before {
+        content: "📍 ";
+    }
+
+    .mapa {
+        flex: 1;
+    }
+
+    .mapa iframe {
+        height: 400px;
+    }
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--preto);
+    border-top: 1px solid var(--vermelho);
+    border-radius: 20px 20px 0 0;
+    font-family: var(--fonte-texto);
+    color: var(--branco);
+}
+
+.rodape-fundo {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 0;
+}
+
+.rodape-fundo img {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.rodape-conteudo {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    color: red;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+    .rodape-fundo img:nth-child(n+3) {
+        display: none;
     }
 }

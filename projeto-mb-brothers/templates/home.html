@@ -35,26 +35,26 @@
 {% block conteudo %}
 <main>
     <section id="hero" class="hero">
-        <div class="hero-text">
-            <p>ACADEMIA DE LUTAS DESDE 2009</p>
-            <h2>Sinta o corpo, redefina seus limites.</h2>
-            <p>Entre para a elite da excelência e faça parte da familia MB Brothers.</p>
-            <p>Treinos de alta performance com professores faixa-preta em um ambiente acolhedor para todos os níveis.
-            </p>
-            <div class="hero-actions">
-                <a href="#sobre" class="btn-primary">Conheça nosssa história</a>
-                <a href="https://wa.me/5583982151111" class="btn-secondary" target="_blank">Contato</a>
-            </div>
-            <img src="" alt="">
+    <img src="{{ url_for('static', filename='img/fundo_hero.jpg') }}" alt="Foto de treino" class="hero-img">
+    <div class="hero-text">
+        <p>ACADEMIA DE LUTAS DESDE 2009</p>
+        <h2>Sinta o corpo, redefina seus limites.</h2>
+        <p>Entre para a elite da excelência e faça parte da família MB Brothers.</p>
+        <p>Treinos de alta performance com professores faixa-preta em um ambiente acolhedor para todos os níveis.</p>
+        <div class="hero-actions">
+            <a href="#sobre" class="btn-primary">Conheça nossa história</a>
+            <a href="https://wa.me/5583982151111" class="btn-secondary" target="_blank">Contato</a>
         </div>
-    </section>
+    </div>
+</section>
     <hr>
     <section id="sobre" class="sobre">
-        
+
         <div class="sobre-content">
             <h2>Uma história construída com comprometimento.</h2>
             <div class="sobre-img">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/622840266_18075397931373692_8420421619613773959_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzMyMjIzNTA2OTk2NjA5MDEwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=MT59DfgPyMUQ7kNvwGzu98L&_nc_oc=Ado5GDDVFR05rHHkqk2qki2ZokPpBqGAxukrsyVTgkXxUiCNSNFMrB0qvX8n115P4cOS7BzE2jBwHXDd1lJnMDV8&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=GXBcHZwZSqbtaP-TfEusAA&_nc_ss=7b6a8&oh=00_AQQ0fP9b31XA6qLiU2mvHBtpGOhBJ-Z9p07f4dy7BSnODw&oe=6AFABE4F" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/622840266_18075397931373692_8420421619613773959_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzMyMjIzNTA2OTk2NjA5MDEwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTM1MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=MT59DfgPyMUQ7kNvwGzu98L&_nc_oc=Ado5GDDVFR05rHHkqk2qki2ZokPpBqGAxukrsyVTgkXxUiCNSNFMrB0qvX8n115P4cOS7BzE2jBwHXDd1lJnMDV8&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=GXBcHZwZSqbtaP-TfEusAA&_nc_ss=7b6a8&oh=00_AQQ0fP9b31XA6qLiU2mvHBtpGOhBJ-Z9p07f4dy7BSnODw&oe=6AFABE4F"
+                    alt="">
                 <!--Foto da MB Brothers-->
             </div>
             <p>Na jornada de mais de 15 anos, Eduardo, um dos sócios da academia, já trilhava seu caminho no mundo do
@@ -75,12 +75,14 @@
                 <p>Professor de Kick-Boxing</p>
             </div>
             <div class="sobre-treinadores">
-                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2504169.png&w=350&h=254" alt="">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2504169.png&w=350&h=254"
+                    alt="">
                 <p>Charles Oliveira</p>
                 <p>Professor de Jiu-Jitsu</p>
             </div>
             <div class="sobre-treinadores">
-                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4294832.png&w=350&h=254" alt="">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4294832.png&w=350&h=254"
+                    alt="">
                 <p>Carlos Prates</p>
                 <p>Professor de Muay-Thai</p>
             </div>
@@ -91,31 +93,36 @@
         <h2>Modalidades</h2>
         <div class="modalidades-lista">
             <div class="artes-marciais">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/869709982_18030144131914244_5515173279055104251_n.jpg?stp=dst-jpg_e35_p320x320_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAxNjc3NDgyNTgzNzQyNDgyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=DVrTkPHvy0oQ7kNvwF09zDa&_nc_oc=AdoHF8xmtIm__TJhuZ85gb9rY4olc3erzKpp2WmiLRtjH_wUClSo_2yFskGnMOi7XSoKeIJ219WOAVF0gLpoL0NV&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQRzEoh8RaxD1cB3uaEoje-zYXqwTIAz2L9-boh3uy9P8Q&oe=6AFABCC4" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/869709982_18030144131914244_5515173279055104251_n.jpg?stp=dst-jpg_e35_p320x320_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAxNjc3NDgyNTgzNzQyNDgyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=DVrTkPHvy0oQ7kNvwF09zDa&_nc_oc=AdoHF8xmtIm__TJhuZ85gb9rY4olc3erzKpp2WmiLRtjH_wUClSo_2yFskGnMOi7XSoKeIJ219WOAVF0gLpoL0NV&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQRzEoh8RaxD1cB3uaEoje-zYXqwTIAz2L9-boh3uy9P8Q&oe=6AFABCC4"
+                    alt="">
                 <p>Muay-Thai</p>
                 <p>Arte das Oito Armas</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="artes-marciais">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/880459039_18031245101914244_8039087042631582885_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMTcxNTc0OTMzMjMxNTE2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-l7-gK2yLAQ7kNvwFHYbyd&_nc_oc=AdpD2ilTR0xcMoEndh6-EcoA0ThWzBecBWchEXuEBKkdz_DVe56H57lAHSPgvDIk3378_DaF2y7iKQcVszdYrZAm&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQTBxWnJg3aEtKwLpSzsrUCb-oSw2Gwt_Gg0EU_cfUtktA&oe=6AFAA093" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/880459039_18031245101914244_8039087042631582885_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMTcxNTc0OTMzMjMxNTE2MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=M-l7-gK2yLAQ7kNvwFHYbyd&_nc_oc=AdpD2ilTR0xcMoEndh6-EcoA0ThWzBecBWchEXuEBKkdz_DVe56H57lAHSPgvDIk3378_DaF2y7iKQcVszdYrZAm&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQTBxWnJg3aEtKwLpSzsrUCb-oSw2Gwt_Gg0EU_cfUtktA&oe=6AFAA093"
+                    alt="">
                 <p>Jiu-Jitsu</p>
                 <p>A arte do Xadrez Humano</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="artes-marciais">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/881049839_18031092956914244_8107299259601914898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMDk3NDgyODk2MTQ3OTA0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=WsWzbw0C0JAQ7kNvwF_SN7A&_nc_oc=Adq62h8V8LqnCW7b_4r3B1_3ydWuBvQogBHwBw4fzUtC_leM3X8WAR879MjtdQhcUojAZmmftZdv5HUnfXw6bjS2&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQTGyVC6xrvYhoZHgJbeVIlaA9_mqR1w3W45VLBlTqHmbA&oe=6AFAB3B4" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/881049839_18031092956914244_8107299259601914898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAyMDk3NDgyODk2MTQ3OTA0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=WsWzbw0C0JAQ7kNvwF_SN7A&_nc_oc=Adq62h8V8LqnCW7b_4r3B1_3ydWuBvQogBHwBw4fzUtC_leM3X8WAR879MjtdQhcUojAZmmftZdv5HUnfXw6bjS2&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=lgquSZsu0Weh112tRa6OFw&_nc_ss=7b6a8&oh=00_AQTGyVC6xrvYhoZHgJbeVIlaA9_mqR1w3W45VLBlTqHmbA&oe=6AFAB3B4"
+                    alt="">
                 <p>Boxe</p>
                 <p>A Nobre Arte</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="artes-marciais">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/758730955_18017603921914244_4518725488481221249_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=Mzk1MjgwMDgyOTQ3NTkxMDgwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTE4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SlOL_oD3YxwQ7kNvwH1YGN1&_nc_oc=Adrm4Or0BpA3Q5zkq_6V9en99CDxJGPDt8TYl1EqxEa4KHqprDxwXyk9C7z9tv6XabwTLknj2RgKM46vz06Incl9&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=6FrIZt-CxEtBAHP4LnQn7g&_nc_ss=7b6a8&oh=00_AQQBTMxKLW2iW0zCIU7zi5RuldyqjEnMcV_LI0ijlnhqhw&oe=6AFAB7A0" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/758730955_18017603921914244_4518725488481221249_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&_nc_map=urlgen_bucketless&ig_cache_key=Mzk1MjgwMDgyOTQ3NTkxMDgwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTE4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=SlOL_oD3YxwQ7kNvwH1YGN1&_nc_oc=Adrm4Or0BpA3Q5zkq_6V9en99CDxJGPDt8TYl1EqxEa4KHqprDxwXyk9C7z9tv6XabwTLknj2RgKM46vz06Incl9&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=6FrIZt-CxEtBAHP4LnQn7g&_nc_ss=7b6a8&oh=00_AQQBTMxKLW2iW0zCIU7zi5RuldyqjEnMcV_LI0ijlnhqhw&oe=6AFAB7A0"
+                    alt="">
                 <p>Kick-Boxing</p>
                 <p>A Arte dos Quatro Membros</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="artes-marciais">
-                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/670511508_18003041075914244_3610511515555456672_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=Mzg3NTE0MDQ3ODM3OTg4MjQxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7LWFkABm-fIQ7kNvwHYm5Vc&_nc_oc=AdqbCvt0dMAL4pX6z4D67OtGO4N9n-f3kP0BRaoDfl_Y27UUc7ijgRWycDiO33bv7k016dqg0wdSSIt5ylRf7TKI&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=dADlIKRBkR5InQncrHaY0Q&_nc_ss=7b6a8&oh=00_AQR-Nqpf5bwW7QFgrYj67TM8tshppWPqU-0OJ43R5s8FVA&oe=6AFABDB6" alt="">
+                <img src="https://instagram.fjpa11-1.fna.fbcdn.net/v/t51.82787-15/670511508_18003041075914244_3610511515555456672_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=Mzg3NTE0MDQ3ODM3OTg4MjQxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=7LWFkABm-fIQ7kNvwHYm5Vc&_nc_oc=AdqbCvt0dMAL4pX6z4D67OtGO4N9n-f3kP0BRaoDfl_Y27UUc7ijgRWycDiO33bv7k016dqg0wdSSIt5ylRf7TKI&_nc_zt=23&_nc_ht=instagram.fjpa11-1.fna&_nc_gid=dADlIKRBkR5InQncrHaY0Q&_nc_ss=7b6a8&oh=00_AQR-Nqpf5bwW7QFgrYj67TM8tshppWPqU-0OJ43R5s8FVA&oe=6AFABDB6"
+                    alt="">
                 <p>MMA</p>
                 <p>O Xadrez Marcial Definitivo</p>
                 <a href="">Saiba mais</a>
@@ -127,17 +134,20 @@
         <div class="servicos-lista">
             <h2>Serviços</h2>
             <div class="servicos-unitario">
-                <img src="https://media.istockphoto.com/id/1501185786/pt/foto/man-doing-physical-therapy-exercises-using-a-stretch-band.jpg?s=612x612&w=0&k=20&c=IFHw-6G_0DegRj7ZRVV6SHgIdA48s6iQqDCCNm-jQuo=" alt="">
+                <img src="https://media.istockphoto.com/id/1501185786/pt/foto/man-doing-physical-therapy-exercises-using-a-stretch-band.jpg?s=612x612&w=0&k=20&c=IFHw-6G_0DegRj7ZRVV6SHgIdA48s6iQqDCCNm-jQuo="
+                    alt="">
                 <p>Fisioterapia</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="servicos-unitario">
-                <img src="https://static.wixstatic.com/media/8735a3_109e8a0219de4079a440a4609b02787f~mv2.jpeg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8735a3_109e8a0219de4079a440a4609b02787f~mv2.jpeg" alt="">
+                <img src="https://static.wixstatic.com/media/8735a3_109e8a0219de4079a440a4609b02787f~mv2.jpeg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8735a3_109e8a0219de4079a440a4609b02787f~mv2.jpeg"
+                    alt="">
                 <p>Nutricionista</p>
                 <a href="">Saiba mais</a>
             </div>
             <div class="servicos-unitario">
-                <img src="https://s2-ge.glbimg.com/g0TS55iphAjxhAdrKkJgIuOAU_w=/0x0:1254x836/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/O/L/5jfteAQWeS1s867sfDMw/exame-esteira-mascara.jpg" alt="">
+                <img src="https://s2-ge.glbimg.com/g0TS55iphAjxhAdrKkJgIuOAU_w=/0x0:1254x836/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/O/L/5jfteAQWeS1s867sfDMw/exame-esteira-mascara.jpg"
+                    alt="">
                 <p>Condicionamento Físico</p>
                 <a href="">Saiba mais</a>
             </div>
@@ -257,8 +267,20 @@
     <hr>
     <section id="localizacao" class="localizacao">
         <h2>Onde estamos localizados</h2>
-        <p>Av. Espírito santo, 381, Estados, João Pessoa - PB</p>
-        <!--Espaço pra colocar o mapa responsivo-->
+
+        <div class="localizacao-conteudo">
+            <div class="endereco">
+                <p>Av. Espírito santo, 381, Estados, João Pessoa - PB</p>
+            </div>
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.108874538148!2d-34.857454700000005!3d-7.1133801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd598e769a87%3A0xaf712bfdfc1a3df8!2sAv.%20Esp%C3%ADrito%20Santo%2C%20381%20-%20Estados!5e0!3m2!1spt-BR!2sbr!4v1794522198290!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                    title="Mapa da localização da MB Brothers">
+                </iframe>
+            </div>
+        </div>
     </section>
     <hr>
 </main>
@@ -267,16 +289,26 @@
 
 {% block rodape %}
 <footer>
-    <div class="copyright">
-        <p>&copy; 2026 MB Brothers. Todos os direitos reservados.</p>
+    <div class="rodape-fundo">
+        <img src="{{ url_for('static', filename='img/rodape1.jpg.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='img/rodape2.jpg.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='img/rodape3.jpg.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='img/rodape4.jpg.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='img/rodape5.jpg.jpg') }}" alt="">
     </div>
-    <div>
-        <ul>
-            <li><a href="#hero">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li id="contato"><a href="https://wa.me/5583982151111" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contato</a></li>
-            <li><a href="https://www.instagram.com/mbbrothers__/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-        </ul>
+
+    <div class="rodape-conteudo">
+        <div class="copyright">
+            <p>&copy; 2026 MB Brothers. Todos os direitos reservados.</p>
+        </div>
+        <div class="links-rodape">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li id="contato"><a href="https://wa.me/5583982151111" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contato</a></li>
+                <li><a href="https://www.instagram.com/mbbrothers__/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 
