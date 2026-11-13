@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <title>{% block titulo %}MB Brothers - Turmas{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#hero">
+            <img src="static/img/Logo-MB-Vetor.svg" alt="Logo da MB Brothers">
+            <span class="mb">MB</span><span class="brothers">Brothers</span>
+            </a>
+        </div>
+        <nav>
+            <a href="#menu" class="menu-toggle abrir" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="#fechar" class="menu-toggle fechar" aria-label="Fechar menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="items" id="menu">
+                <li><a href="#muaythai">Muay-thai</a></li>
+                <li><a href="#jiujitsu">JiuJitsu</a></li>
+                <li><a href="#boxe">Boxe</a></li>
+                <li><a href="#kickboxing">Kick-Boxing</a></li>
+                <li><a href="#mma">MMA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introducao">
+            <h1>NOSSAS MODALIDADES</h1>
+            <p>
+                Encontre sua modalidade, supere seus limites e descubra
+                a força que existe em você. Na MB Brothers, temos
+                treinamento para todos os níveis.
+            </p>
+        </section>
+        <section id="turmas">
+            <div id="muaythai" class="modalidade">
+                <h2>MUAY-THAI</h2>
+                <p>Conhecida como a arte das oito armas, o Muay Thai utiliza punhos, cotovelos, joelhos e canelas. Uma modalidade intensa que combina técnica, resistência e estratégia.</p>
+                <div>
+                    <h3>Benefícios</h3>
+                    <ul>
+                        <li>Alto gasto calórico</li>
+                        <li>Melhora da coordenação motora</li>
+                        <li>Desenvolvimento da autoconfiança</li>
+                    </ul>
+                </div>
+
+                <div class="horarios">
+                    <h3>HORÁRIOS</h3>
+                    <p>Terça e quinta: 09h40 às 11h20</p>
+                    <p>Segunda e Quarta (Kids): 08h00 às 09h40</p>
+                </div>
+            </div>
+            <div id="jiujitsu" class="modalidade">
+                <h2>JIU-JITSU</h2>
+                    <p>Uma arte marcial baseada em técnicas de luta agarrada, imobilizações e finalizações. O Jiu-Jitsu valoriza a técnica e a estratégia, permitindo que atletas de diferentes portes físicos possam praticar.</p>
+                <div>
+                    <h3>Benefícios</h3>
+                    <ul>
+                        <li>Desenvolvimento da estratégia</li>
+                        <li>Melhora da flexibilidade</li>
+                        <li>Controle corporal e equilíbrio</li>
+                    </ul>
+                </div>
+
+                <div class="horarios">
+                    <h3>HORÁRIOS</h3>
+                    <p>Segunda, quarta e sábado: 08h às 09h40</p>
+                    <p>Terça e quinta (Kids): 08h às 09h40</p>
+                </div>
+            </div>
+            <div id="boxe" class="modalidade">
+                <h2>BOXE</h2>
+                    <p>Uma das modalidades de combate mais tradicionais do mundo. O Boxe trabalha golpes com os punhos, movimentação, defesa e velocidade, exigindo técnica e concentração.</p>
+                <div>
+                    <h3>Benefícios</h3>
+                    <ul>
+                        <li>Melhora da agilidade e dos reflexos</li>
+                        <li>Desenvolvimento da resistência</li>
+                        <li>Fortalecimento do sistema cardiovascular</li>
+                    </ul>
+                </div>
+
+                <div class="horarios">
+                    <h3>HORÁRIOS</h3>
+                    <p>Segunda e quarta: 15h10 às 16h50</p>
+                    <p>Terça e quinta: 13h30 às 15h10</p>
+                </div>
+            </div>
+            <div id="kickboxing" class="modalidade">
+                <h2>KICK-BOXING</h2>
+                    <p>O Kickboxing combina técnicas de socos e chutes, trabalhando velocidade, potência e precisão. É uma excelente opção para quem procura condicionamento e técnicas de combate.</p>
+                <div>
+                    <h3>Benefícios</h3>
+                    <ul>
+                        <li>Desenvolvimento da potência muscular</li>
+                        <li>Melhora da resistência física</li>
+                        <li>Aumento da coordenação motora</li>
+                    </ul>
+                </div>
+
+                <div class="horarios">
+                    <h3>HORÁRIOS</h3>
+                    <p>Segunda e quarta: 13h30 às 15h10</p>
+                    <p>Terça e quinta: 15h10 às 16h50</p>
+                </div>
+            </div>
+            <div id="mma" class="modalidade">
+                <h2>MMA</h2>
+                    <p>O Mixed Martial Arts reúne diferentes artes marciais, combinando técnicas de luta em pé, quedas e combate no solo. Uma modalidade completa que exige preparo físico, estratégia e versatilidade.</p>
+                <div>
+                    <h3>Benefícios</h3>
+                    <ul>
+                        <li>Desenvolvimento de habilidades variadas</li>
+                        <li>Melhora do condicionamento físico</li>
+                        <li>Agilidade e raciocínio estratégico</li>
+                    </ul>
+                </div>
+
+                <div class="horarios">
+                    <h3>HORÁRIOS</h3>
+                    <p>Segunda à quinta: 18h10 às 19h50</p>
+                </div>
+            </div>
+        </section>
+        <section id="tabela-horarios">
+            <h2>TABELA DE HORÁRIOS</h2>
+            <table>
+                <thead>
+                    <th>Horários</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8h00 - 8h50</td>
+                        <td>Muay-Thai KIDS</td>
+                        <td>Jiu-Jitsu KIDS</td>
+                        <td>Muay-Thai KIDS</td>
+                        <td>Jiu-Jitsu KIDS</td>
+                        <td>Sparring</td>
+                        <td>Jiu-Jitsu</td>
+                    </tr>
+                    <tr>
+                        <td>8h50 - 9h40</td>
+                        <td>Muay-Thai KIDS</td>
+                        <td>Jiu-Jitsu KIDS</td>
+                        <td>Muay-Thai KIDS</td>
+                        <td>Jiu-Jitsu KIDS</td>
+                        <td>Sparring</td>
+                        <td>Jiu-Jitsu</td>
+                    </tr>
+                    <tr>
+                        <td>9h40 - 10h30</td>
+                        <td>Jiu-Jitsu</td>
+                        <td>Muay-Thai</td>
+                        <td>Jiu-Jitsu</td>
+                        <td>Muay-Thai</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>10h30 - 11h20</td>
+                        <td>Jiu-Jitsu</td>
+                        <td>Muay-Thai</td>
+                        <td>Jiu-Jitsu</td>
+                        <td>Muay-Thai</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>13h30 - 14h20</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                     <tr>
+                        <td>14h20 - 15h10</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>15h10 - 16h00</td>
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>16h00 - 16h50</td> 
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>Boxe</td>
+                        <td>Kick-Boxing</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>                        
+                    <tr>
+                        <td>18h10 - 19h00</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>Sparring</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>19h00 - 19h50</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>MMA</td>
+                        <td>Sparring</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="chamada">
+            <h2>PRONTO PARA COMEÇAR?</h2>
+            <p>Escolha sua modalidade e venha fazer parte da família MB Brothers!</p>
+            <a href="https://wa.me/5583982151111">ENTRE EM CONTATO</a>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape-fundo">
+            <img src="{{ url_for('static', filename='img/rodape1.jpg.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='img/rodape2.jpg.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='img/rodape3.jpg.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='img/rodape4.jpg.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='img/rodape5.jpg.jpg') }}" alt="">
+        </div>
+
+        <div class="rodape-conteudo">
+            <div class="copyright">
+                <p>&copy; 2026 MB Brothers. Todos os direitos reservados.</p>
+            </div>
+            <div class="links-rodape">
+                <ul>
+                    <li><a href="#introducao">Início</a></li>
+                    <li><a href="#tabela-horarios">Horários</a></li>
+                    <li id="contato"><a href="https://wa.me/5583982151111" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contato</a></li>
+                    <li><a href="https://www.instagram.com/mbbrothers__/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

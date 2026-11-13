@@ -6,9 +6,10 @@
     --vermelho: #e10600;
     --vermelho-escuro: #470100;
     --branco: #f5f5f5;
-    --fonte-titulo: Impact, "Arial Narrow Bold", "Arial Black", sans-serif;
-    --fonte-texto: "Segoe UI", Arial, sans-serif;
-}
+    --fonte-titulo: Impact, 'Oswald', sans-serif;
+    --fonte-texto: 'Oswald', sans-serif;
+}  
+
 .hero {
     position: relative;
     overflow: hidden;
